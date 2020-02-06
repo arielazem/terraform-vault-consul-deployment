@@ -89,7 +89,7 @@ vault write -f transit/keys/orders
 ### Configure Vault Agent
 Config File (/opt/vault/config/agent-config.hcl)
 ```sh
-xit_after_auth = false
+exit_after_auth = false
 pid_file = "./pidfile"
 auto_auth {
    method "approle" {
