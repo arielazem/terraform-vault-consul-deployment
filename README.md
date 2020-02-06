@@ -27,6 +27,26 @@ From an architectural viewpoint us-east-1 was discarded as the primary region an
 | ------ | ------
 | Flask App | http://18.228.155.206:8000/ |
 
+
+### Vault Auto-Unseal with AWS KMS / Vault initialization
+
+```sh
+vault operator init -recovery-pgp-keys=“keybase:arielazem,keybase:richp,keybase:dawasz,keybase:redacted_ahead,keybase:lxhxr”
+```
+
+### Enabling Audit Log File device
+```sh
+vault audit enable syslog tag="vault" facility="LOCAL7"
+Success! Enabled the syslog audit device at: syslog/
+```
+
+### Enable Userpass Auth method
+admin-policy contains all privileges required for an admin user in vault
+```sh
+vault auth enable userpass
+vault write auth/userpass/users/ariel-admin password=foo policies=admin-policy
+```
+
 ### Database Dynamic Secrets Configuration
 Database Dynamic secrets were enabled in order to work with the flask application following the steps below, for the MySQL/MariaDB database.
 
