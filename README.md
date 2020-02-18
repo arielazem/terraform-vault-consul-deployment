@@ -3,9 +3,8 @@
 <img src="https://www.digitalonus.com/wp-content/uploads/2019/06/digital_on_us_logo.png" width="300"><br>
 <img src="https://cdn.worldvectorlogo.com/logos/hashicorp.svg" width="150">
 <br><br>
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+https://dillinger.io/
 
 ## Documentation Sections
 
